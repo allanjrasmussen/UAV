@@ -20,19 +20,19 @@ Beskrivelse: Denne Unmaned Flying Vehicle kan modtage instruktioner fra jord kon
 typedef struct
 {
 
-  uint16_t TIM_Channel;      /*!< Specifies the TIM channel.
+	uint16_t  	TIM_Channel;      /*!< Specifies the TIM channel.
                                   This parameter can be a value of @ref TIM_Channel */
 
-  uint16_t TIM_ICPolarity;   /*!< Specifies the active edge of the input signal.
+	uint16_t  TIM_ICPolarity;   /*!< Specifies the active edge of the input signal.
                                   This parameter can be a value of @ref TIM_Input_Capture_Polarity */
 
-  uint16_t TIM_ICSelection;  /*!< Specifies the input.
+ 	uint16_t  TIM_ICSelection;  /*!< Specifies the input.
                                   This parameter can be a value of @ref TIM_Input_Capture_Selection */
 
-  uint16_t TIM_ICPrescaler;  /*!< Specifies the Input Capture Prescaler.
+	uint16_t TIM_ICPrescaler;  /*!< Specifies the Input Capture Prescaler.
                                   This parameter can be a value of @ref TIM_Input_Capture_Prescaler */
 
-  uint16_t TIM_ICFilter;     /*!< Specifies the input capture filter.
+	uint16_t TIM_ICFilter;     /*!< Specifies the input capture filter.
                                   This parameter can be a number between 0x0 and 0xF */
 } TIM_ICInitTypeDef;
 
