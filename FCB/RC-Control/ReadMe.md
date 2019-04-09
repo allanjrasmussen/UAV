@@ -13,28 +13,28 @@ Beskrivelse: Denne Unmaned Flying Vehicle kan modtage instruktioner fra jord kon
 | PD.06 | ext | TIM2_CH4 (Receiver PWM input) |
 | PD.07 | ext | TIM2_CH3 (Receiver PWM input) |
 
-/** 
-  * @brief  TIM Input Capture Init structure definition  
-  */
+	/** 
+	* @brief  TIM Input Capture Init structure definition  
+	*/
 
-typedef struct
-{
+	typedef struct
+	{
 
-	uint16_t	TIM_Channel;      /*!< Specifies the TIM channel.
-                                  This parameter can be a value of @ref TIM_Channel */
+		uint16_t	TIM_Channel;      /*!< Specifies the TIM channel.
+					  This parameter can be a value of @ref TIM_Channel */
 
-	uint16_t	TIM_ICPolarity;   /*!< Specifies the active edge of the input signal.
-                                  This parameter can be a value of @ref TIM_Input_Capture_Polarity */
+		uint16_t	TIM_ICPolarity;   /*!< Specifies the active edge of the input signal.
+					  This parameter can be a value of @ref TIM_Input_Capture_Polarity */
 
- 	uint16_t	TIM_ICSelection;  /*!< Specifies the input.
-                                  This parameter can be a value of @ref TIM_Input_Capture_Selection */
+		uint16_t	TIM_ICSelection;  /*!< Specifies the input.
+					  This parameter can be a value of @ref TIM_Input_Capture_Selection */
 
-	uint16_t	TIM_ICPrescaler;  /*!< Specifies the Input Capture Prescaler.
-                                  This parameter can be a value of @ref TIM_Input_Capture_Prescaler */
+		uint16_t	TIM_ICPrescaler;  /*!< Specifies the Input Capture Prescaler.
+					  This parameter can be a value of @ref TIM_Input_Capture_Prescaler */
 
-	uint16_t	TIM_ICFilter;     /*!< Specifies the input capture filter.
-                                  This parameter can be a number between 0x0 and 0xF */
-} TIM_ICInitTypeDef;
+		uint16_t	TIM_ICFilter;     /*!< Specifies the input capture filter.
+					  This parameter can be a number between 0x0 and 0xF */
+	} TIM_ICInitTypeDef;
 
 ## 21.3.6 PWM input mode
 This mode is a particular case of input capture mode. The procedure is the same except:
